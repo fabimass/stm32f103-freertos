@@ -94,7 +94,7 @@ void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef* hadc)
 	static uint16_t adc_value = 0;
 
 	// Obtains the conversion result
-	adc_value = HAL_ADC_GetValue(&hadc1);
+	adc_value = HAL_ADC_GetValue(hadc);
 
 	// Sends the value to the queue
 	xQueueOverwriteFromISR(adc_queue, &adc_value, &xHigherPriorityTaskWoken);

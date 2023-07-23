@@ -24,9 +24,9 @@
 #define configUSE_TICKLESS_IDLE                 1
 #define configCPU_CLOCK_HZ                      SystemCoreClock
 //#define configSYSTICK_CLOCK_HZ                  1000000
-#define configTICK_RATE_HZ                      1000 // El systick es de 24 bits, a 120MHz el minimo es aprox 7Hz
+#define configTICK_RATE_HZ                      1000
 #define configMAX_PRIORITIES                    5
-#define configMINIMAL_STACK_SIZE                128 // Son palabras (32 bits) no bytes
+#define configMINIMAL_STACK_SIZE                128
 #define configMAX_TASK_NAME_LEN                 20
 #define configUSE_16_BIT_TICKS                  0
 #define configIDLE_SHOULD_YIELD                 1

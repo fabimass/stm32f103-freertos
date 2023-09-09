@@ -1,10 +1,14 @@
 This is a collection of programs for the STM32F103 microcontroller (Blue-Pill board), leveraging FreeRTOS as operating system.
 
+<br>
+
 ## GPIO
 
 ### [Blinky](https://github.com/fabimass/stm32f103-freertos/tree/main/gpio/gpio_blinky)
 
 The following program turns on and off the bluepill led periodically.
+
+<br>
 
 ## ADC
 
@@ -33,6 +37,8 @@ The code consists of the following:
 - A task that is waiting for the semaphore will then read all the values saved in memory, calculate the average for each channel, and put the final values into a queue.
 - Another task reads from that queue and then will turn on/off the leds according to the value from each channel (led 1 is tied to channel 1 and led 2 to channel 2).
 
+<br>
+
 ## SPI
 
 ### [TFT Display + Touchpad](https://github.com/fabimass/stm32f103-freertos/tree/main/spi/tft_display_tactile)
@@ -49,6 +55,8 @@ The following program shows how to handle files within an SD card.
 - First, it will create a binary file called datafile.dat; then, it will log the data in a text file; finally, it will read the binary file that was created before.
 - FATFS configurations were done following this video: https://www.youtube.com/watch?v=aqSNz26Cuio
 - SD Card filesystem must be FAT32.
+
+<br>
 
 ## UART
 

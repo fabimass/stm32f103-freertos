@@ -43,6 +43,16 @@ The code consists of the following:
 
 <br>
 
+## TIMER
+
+### [Blinky](https://github.com/fabimass/stm32f103-freertos/tree/main/timer/timer_blinky)
+
+The following program turns on and off the bluepill led periodically using a timer.
+- The formula for the timer is: Tout= (Prescaler x Preload) / Clock Frequency
+- When using 72 MHz Clock frequency and Prescaler value as 1000, for an output time of 500ms,
+the Preload value will come out to be (0.5 x 72 x 1000000) / 1000 = 36000
+<br>
+
 ## SPI
 
 ### [TFT Display + Touchpad](https://github.com/fabimass/stm32f103-freertos/tree/main/spi/tft_display_tactile)

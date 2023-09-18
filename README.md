@@ -51,6 +51,15 @@ The following program turns on and off the bluepill led periodically using a tim
 - The formula for the timer is: Tout= (Prescaler x Preload) / Clock Frequency
 - When using 72 MHz Clock frequency and Prescaler value as 1000, for an output time of 500ms,
 the Preload value will come out to be (0.5 x 72 x 1000000) / 1000 = 36000
+
+### [PWM](https://github.com/fabimass/stm32f103-freertos/tree/main/timer/timer_pwm)
+
+The following program generates a pwm signal on one of the timer output pins.
+- When the timer starts, the output is high, the timer will count until it reaches the Pulse value, then the output will go to low, and the timer will continue until it reaches the Preload value. Finally, the timer resets and the cycle starts all over.
+- The pwm frequency is given by: freq= Clock Frequency / (Prescaler x Preload)
+- When using 72 MHz Clock frequency and Preload value as 100, for a 1KHz pwm, the Prescaler value will come out to be (72 x 1000000)/(100 x 1000) = 720
+- Then, duty cycle is given directly by the Pulse value
+
 <br>
 
 ## SPI

@@ -81,6 +81,14 @@ The following program shows how to handle files within an SD card.
 
 <br>
 
+## I2C
+
+### [LCD Display](https://github.com/fabimass/stm32f103-freertos/tree/main/i2c/lcd_display)
+
+The following program was made to control a 2x16 LCD through an I2C adapter. It shows a countdown timer on the display.
+
+<br>
+
 ## UART
 
 ### [Echo](https://github.com/fabimass/stm32f103-freertos/tree/main/uart/uart_pc)
